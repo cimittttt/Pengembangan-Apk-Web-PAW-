@@ -16,7 +16,7 @@ function ItemCard({ item, onHapus, onUbahJumlah }) {
           onClick={() => onUbahJumlah(item.id, item.jumlah - 1)}
           disabled={item.jumlah <= 1}
         >
-  
+          -
         </button>
         <span style={styles.jumlahText}>{item.jumlah}</span>
         <button
