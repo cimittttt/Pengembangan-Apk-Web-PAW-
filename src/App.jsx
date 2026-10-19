@@ -76,7 +76,7 @@ function App() {
       </main>
 
       <footer style={styles.footer}>
-        <p>Cart &mdash; React.js + useState + useEffect</p>
+        <p>tugas PAW joline</p>
       </footer>
     </div>
   );
