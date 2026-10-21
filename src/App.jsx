@@ -5,14 +5,7 @@ import ItemList from './components/ItemList';
 import RingkasanBelanja from './components/RingkasanBelanja';
 
 function App() {
-  const [keranjang, setKeranjang] = useState(() => {
-    const dataTersimpan = localStorage.getItem('keranjang');
-    return dataTersimpan ? JSON.parse(dataTersimpan) : [];
-  });
-
-  useEffect(() => {
-    localStorage.setItem('keranjang', JSON.stringify(keranjang));
-  }, [keranjang]);
+  const [keranjang, setKeranjang] = useState([]);
 
   useEffect(() => {
     const totalItem = keranjang.reduce((acc, item) => acc + item.jumlah, 0);
